@@ -1,0 +1,195 @@
+
+
+/* src/App.css */
+.app {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #218838;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+li span {
+  cursor: pointer;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Base styles */
+.app {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  transition: background 0.3s;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+li span {
+  cursor: pointer;
+}
+
+/* Light Theme */
+.light {
+  background: #f0f0f0;
+  color: #000;
+}
+
+.light input,
+.light li {
+  background: #fff;
+}
+
+.light button {
+  background: #28a745;
+  color: white;
+}
+
+.light button:hover {
+  background: #218838;
+}
+
+/* Dark Theme */
+.dark {
+  background: #121212;
+  color: #f0f0f0;
+}
+
+.dark input,
+.dark li {
+  background: #1e1e1e;
+  color: #f0f0f0;
+}
+
+.dark button {
+  background: #bb86fc;
+  color: #000;
+}
+
+.dark button:hover {
+  background: #9f6dfc;
+}
+
+.theme-toggle {
+  text-align: right;
+  margin-bottom: 10px;
+}
+.overdue {
+  border-left: 4px solid red;
+  background-color: #ffe5e5;
+}
+
+.dark .overdue {
+  background-color: #4a1a1a;
+  border-left: 4px solid #ff4d4d;
+}
+.countdown {
+  font-size: 0.85em;
+  color: #555;
+  margin-top: 4px;
+}
+
+.overdue .countdown {
+  color: red;
+}
+
+.dark .countdown {
+  color: #ccc;
+}
+
+.dark .overdue .countdown {
+  color: #ff8080;
+}
